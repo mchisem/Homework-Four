@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(32, 179, 179);
+    object-position: center;
+    justify-content: center;
+}
+
+/*navbar*/
+#time {
+    margin-right: 60px;
+}
+
+/*greeting*/
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+#intro {
+    justify-content: center;
+    object-position: center;
+    text-align: center;
+}
+
+/*questions*/
+h2 {
+    font-size: 40px;
+}
+
+/*responses*/
+button {
+    margin: 2px;
+}
+
+button:hover {
+    border: 3px solid cadetblue;
+}
+
+/*done*/
+#fin {
+    text-align: center;
+}
+
+/*hide quesitons*/
+.hide {
+    display: none;
+}
+
+.container {
+    justify-content: center;
+    object-position: center;
+}

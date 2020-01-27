@@ -7,74 +7,68 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylecss" href="style.css">
-    
+
     <title>Quiz!</title>
 </head>
 <body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div id="score">High Score:</div>
+        <div id="timer">Time: </div>
+    </nav>
 
-<nav class="navbar navbar-dark bg-primary">
-    <div id="score">Your High Score:</div>
-    <div id="time">Time:</div>
-</nav>
+    <div class="container" id="intro">
+        <div class="flex-center flex-column">
+            <h1>Timed Quiz!</h1>
+            <p>Think you can pass this timed quiz?</p>
+            <button id="start">Start</button>
+            <button id="highscores">High Scores</button>
+        </div>
+    </div>
 
-<div class="container" id="intro">
-    <h1>Coding Quiz!</h1>
-    <p>Think you can past this timed test?</p>
-    <button id="start">Try Me</button>
-</div>
+    <div class="hide" id="question1">
+        <div class="container">
+            <h2>What does DOM stand for?</h2>
+            <div id="answers"></div>
+            <div id="answers"></div>
+            <div id="answers"></div>
+            <div id="answers"></div>
+        </div>
+    </div>
 
+    <div class="hide" id="question2">
+        <div class="container">
+            <h2>______script</h2>
+            <div id="answer"></div>
+            <div id="answer"></div>
+            <div id="answer"></div>
+        </div>
+    </div>
 
-<div class="container" id="ques1">
-  <h2 id="ques-1"></h2>
-  <form action="/action_page.php">
-    <div></div><br>
-    <div></div><br>
-    <div></div><br>
-  </form>
-</div>
+    <div class="hide" id="question3">
+        <div class="container">
+            <h2>Why is?</h2>
+            <div id="answer"></div>
+            <div id="answer"></div>
+            <div id="answer"></div>
+        </div>
+    </div>
 
-<div class="container" id="ques2">
-    <h2 id="ques-2"></h2>
-    <form action="/action_page.php">
-        <div></div><br>
-        <div></div><br>
-        <div></div><br>
-      </form>
-</div>
+    <div class="hide" id="question4">
+        <div class="container">
+            <h2>Why is?</h2>
+            <div id="answer"></div>
+            <div id="answer"></div>
+            <div id="answer"></div>
+        </div>
+    </div>
 
-<div class="container" id="ques3">
-    <h2 id="ques-3"></h2>
-    <form action="/action_page.php">
-        <div></div><br>
-        <div></div><br>
-        <div></div><br>
-      </form>
-</div>
-
-<div class="container" id="ques4">
-   <h2 id="ques-4"></h2> 
-   <form action="/action_page.php">
-    <div></div><br>
-    <div></div><br>
-    <div></div><br>
-  </form>
-</div>
-
-<div class="container" id="ques5">
-    <h2 id="ques-5"></h2>
-    <form action="/action_page.php">
-        <div></div><br>
-        <div></div><br>
-        <div></div><br>
-      </form>
-</div>
-
-<div class="container" id="fin">
-    <h1 id="done">All done!</h1>
-    <form>
-        Enter Initials: <input type="text" name="Initials">
-        <button id="submit" type="submit">Submit</button>
-      </form>
+    <div class="hide" id="fin">
+        <h1 id="done">All done!</h1>
+        <form>
+            Enter Initials: <input type="text" name="Initials">
+            <button id="submit" type="submit">Submit</button>
+          </form>
+    </div>
 </div>
 
 <script src="C:\Users\mayac\Desktop\Homework-Four\questions.js"></script>

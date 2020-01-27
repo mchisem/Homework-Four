@@ -5,11 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylecss" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <title>Quiz!</title>
 </head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: skyblue;
+    color: white;
+}
+
+h1 {
+    font-size: 65px;
+}
+
+h2 {
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    max-width: 800px;
+    max-height: 500px;
+    background-color: teal;
+    border: 2px solid aqua;
+    margin-top: 150px;
+    text-align: center;
+}
+
+/*navbar*/
+#timer {
+    margin-right: 100px;
+}
+/*intro*/
+.flex-center {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 125px;
+}
+
+.flex-column {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+button {
+    margin: 3px;
+    width: 300px;
+    text-align: center;
+}
+
+button:hover {
+    box-shadow: 3px 4px 14px 4px rgb(86, 185, 235, 0.5);
+    transform: translateY(-1px);
+    transition: transform 150ms;
+}
+
+/*questions*/
+
+/* .hide {
+    display: none;
+} */
+
+#answers {
+    columns: 2;
+    margin-top: 50px;
+   padding: 30px;
+}
+</style>
 <body>
     <nav class="navbar navbar-dark bg-dark">
         <div id="score">High Score:</div>
@@ -18,7 +91,7 @@
 
     <div class="container" id="intro">
         <div class="flex-center flex-column">
-            <h1>Timed Quiz!</h1>
+            <h1>Quiz!</h1>
             <p>Think you can pass this timed quiz?</p>
             <button id="start">Start</button>
             <button id="highscores">High Scores</button>
@@ -27,51 +100,25 @@
 
     <div class="hide" id="question1">
         <div class="container">
-            <h2>What does DOM stand for?</h2>
+            <h2>Question?</h2>
             <div id="answers"></div>
             <div id="answers"></div>
             <div id="answers"></div>
             <div id="answers"></div>
-        </div>
-    </div>
-
-    <div class="hide" id="question2">
-        <div class="container">
-            <h2>______script</h2>
-            <div id="answer"></div>
-            <div id="answer"></div>
-            <div id="answer"></div>
-        </div>
-    </div>
-
-    <div class="hide" id="question3">
-        <div class="container">
-            <h2>Why is?</h2>
-            <div id="answer"></div>
-            <div id="answer"></div>
-            <div id="answer"></div>
-        </div>
-    </div>
-
-    <div class="hide" id="question4">
-        <div class="container">
-            <h2>Why is?</h2>
-            <div id="answer"></div>
-            <div id="answer"></div>
-            <div id="answer"></div>
         </div>
     </div>
 
     <div class="hide" id="fin">
+        <div class="container">
         <h1 id="done">All done!</h1>
         <form>
             Enter Initials: <input type="text" name="Initials">
             <button id="submit" type="submit">Submit</button>
           </form>
+        </div>
     </div>
-</div>
 
-<script src="C:\Users\mayac\Desktop\Homework-Four\questions.js"></script>
-<script src="C:\Users\mayac\Desktop\Homework-Four\script.js"></script>
+    <script src="C:\Users\mayac\Desktop\Homework-Four\questions.js"></script>
+    <script src="C:\Users\mayac\Desktop\Homework-Four\script.js"></script>
 </body>
 </html>

@@ -7,6 +7,15 @@ body {
     color: white;
 }
 
+h1 {
+    font-size: 65px;
+}
+
+h2 {
+    margin-top: 50px;
+    font-size: 40px;
+}
+
 .container {
     width: 100vw;
     height: 100vh;
@@ -14,7 +23,8 @@ body {
     max-height: 500px;
     background-color: teal;
     border: 2px solid aqua;
-    margin-top: 100px;
+    margin-top: 150px;
+    text-align: center;
 }
 
 /*navbar*/
@@ -27,7 +37,7 @@ body {
     justify-content: center;
     text-align: center;
     align-items: center;
-    padding: 150px;
+    padding: 125px;
 }
 
 .flex-column {
@@ -49,6 +59,13 @@ button:hover {
 }
 
 /*questions*/
-.hide {
+
+/* .hide {
     display: none;
+} */
+
+#answers {
+    columns: 2;
+    margin-top: 50px;
+   padding: 30px;
 }

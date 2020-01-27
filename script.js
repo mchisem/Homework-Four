@@ -6,7 +6,7 @@ const intro = document.getElementById('intro');
 const next = document.querySelector('hide');
 const question1 = document.getElementById('question1');
 const answers = document.getElementById('answers');
-var question2 = document.getElementById('question2');
+
 
 //timer//
 var secondsLeft = 75;
@@ -67,4 +67,18 @@ var questions = [
 for(var i = 0; i < questions[0].choices.length; i++) {
 
     answers.innerHTML += "<button>" + questions[0].choices[i] + "</button>" + "<br>";
+
+} if(answers.correct) {
+    questions[0].choices[i] === questions[0].answer[0];
+}  
+
+//answer the questions and move onto next set of questions//
+
+function nextQuestion() {
+
+}
+//subtract 15 seconds when you click the wrong answer//
+
+function minusTime() {
+
 }

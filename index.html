@@ -11,76 +11,83 @@
     <title>Quiz!</title>
 </head>
 <style>
-* {
-    box-sizing: border-box;
-}
+    * {
+        box-sizing: border-box;
+    }
 
-body {
-    background-color: skyblue;
-    color: white;
-}
+    body {
+        background-color: skyblue;
+        color: white;
+    }
 
-h1 {
-    font-size: 65px;
-}
+    h1 {
+        font-size: 65px;
+    }
 
-h2 {
-    margin-top: 50px;
-    font-size: 40px;
-}
+    h2 {
+        margin-top: 50px;
+        font-size: 40px;
+    }
 
-.container {
-    width: 100vw;
-    height: 100vh;
-    max-width: 800px;
-    max-height: 500px;
-    background-color: teal;
-    border: 2px solid aqua;
-    margin-top: 150px;
-    text-align: center;
-}
+    .container {
+        width: 100vw;
+        height: 100vh;
+        max-width: 700px;
+        max-height: 400px;
+        background-color: teal;
+        border: 2px solid rgb(86, 185, 235, 0.5);
+        box-shadow: 4px 4px 16px 2px rgba(000, 000, 000, 3);
+        margin-top: 150px;
+        text-align: center;
+    }
 
-/*navbar*/
-#timer {
-    margin-right: 100px;
-}
-/*intro*/
-.flex-center {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding: 125px;
-}
+    /*navbar*/
+    #timer {
+        margin-right: 30px;
+    }
 
-.flex-column {
-    justify-content: center;
-    display: flex;
-    text-align: center;
-}
+    
+    /*intro*/
+    .flex-center {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 85px;
+    }
 
-button {
-    margin: 3px;
-    width: 300px;
-    text-align: center;
-}
+    .flex-column {
+        justify-content: center;
+        display: flex;
+        text-align: center;
+    }
 
-button:hover {
-    box-shadow: 3px 4px 14px 4px rgb(86, 185, 235, 0.5);
-    transform: translateY(-1px);
-    transition: transform 150ms;
-}
+    button {
+        margin: 3px;
+        width: 300px;
+        text-align: center;
+        padding: 15px;
+    }
 
-/*questions*/
+    button:hover {
+        box-shadow: 3px 4px 14px 4px rgb(86, 185, 235, 0.5);
+        transform: translateY(-1px);
+        transition: transform 150ms;
+    }
 
-/* .hide {
-    display: none;
-} */
+    /*questions*/
+    
+   * .hide {
+        display: none;
+    } 
 
-#answers {
-    columns: 2;
-    margin-top: 50px;
-   padding: 30px;
+    #answers,
+    #answers2,
+    #answers3 {
+        columns: 2;
+        margin-top: 50px;
+        padding: 30px;
+    }
 }
 </style>
 <body>
